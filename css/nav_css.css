@@ -1,0 +1,28 @@
+/* Navbar Styles */
+.nav_container ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.nav_container ul li {
+    width: 12vw; 
+    padding: 1vh 1vw;
+    border-radius: 5px;
+}
+.nav_container ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5vw; 
+    padding: 1vh 1vw;
+    transition: background-color 0.3s;
+}
+.nav_container ul li:hover {
+    background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(255, 147, 228, 1));
+    border-radius: 5px;
+}
+
+.nav_container ul li:active  {
+    background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(118, 11, 91));
+    border-radius: 5px;
+}

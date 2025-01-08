@@ -1,0 +1,108 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+
+    background: linear-gradient(rgb(0, 0, 0), #646464, rgb(0, 0, 0));
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 4vw; 
+}
+
+.logo img {
+    width: 3.5vw; 
+    border-radius: 12px;
+}
+
+
+
+.container1 {
+    border-radius: 13px;
+    width: 80%;
+    height: 110%;
+
+    display: flex;
+    justify-content: space-between;
+    background: conic-gradient(from 90deg, rgb(107, 107, 107), rgb(51, 51, 51), rgb(0, 0, 0), rgb(51, 51, 51), rgb(107, 107, 107));
+    align-items: center;
+    padding: 5vh 5vw;
+    border: 1px solid black;
+    box-shadow: 10px 10px 22px 10px black;
+    margin: 8vh auto;
+}
+
+.content1 {
+    color: white;
+    flex: 1;
+    font-size: 2vw;
+}
+
+.content1 h1 {
+    margin: 1vh 0;
+}
+
+.content2 button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1vh 3vw; 
+    color: purple;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2vw; 
+    transition: background-color 0.5s;
+}
+
+.content2 button:hover {
+    background-color: #F285DE;
+    color: #fff;
+}
+
+.content2 button:active {
+    background-color: #6d055a;
+    color: #fff;
+}
+
+.pic1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pic1 img {
+    box-shadow: 0 0 25px purple;
+    border-radius: 50%;
+    width: 20vw;
+    max-width: 200px;
+    border: 1px solid #D700C1;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1.49rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

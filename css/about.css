@@ -1,0 +1,61 @@
+.pic2 {
+    flex: 1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.pic2 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto; 
+}
+
+.text {
+    color: #fff;
+    flex: 2;
+    padding: 5vw;
+}
+
+.text h2 {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+}
+
+.text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.message {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#btn2 {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px 20px;
+    color: rgb(222, 67, 222);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem; 
+    transition: background-color 0.5s;
+}
+
+#btn2:hover {
+    background-color: #F285DE;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#btn2:active {
+    background-color: #6d055a;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
