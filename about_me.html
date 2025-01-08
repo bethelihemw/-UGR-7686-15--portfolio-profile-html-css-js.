@@ -4,22 +4,266 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about me</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+.home-page{  
+    background: linear-gradient(rgb(0, 0, 0),#646464,rgb(0, 0, 0));
+}
+body {
+  margin: 0; 
+  height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 0px 30px;
+}
+.logo img {
+    margin: 1px auto;
+    width: 50px;
+    border-radius: 12px;
+    margin-left: 30px;
+}
+.nav_container ul {
+    list-style-type: none;
+    display: flex;
+}
+#about{
+    background: linear-gradient(rgba(128, 0, 128, 1),black);
+}
+.nav_container ul li {
+    /* margin-right: 20px; */
+    width: 160px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.nav_container ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+.nav_container ul li:hover {
+    background: linear-gradient(to bottom, rgb(28, 28, 28,0), rgb(255, 147, 228,1));
+    border-radius: 5px;
+}
+
+
+
+.container2 {
+    color: white;
+    border-radius: 13px;
+    width: 950px;
+    height:500px;
+    display: flex;
+    justify-content: space-between;
+    background: conic-gradient(from 90deg, rgb(107,107,107),rgb(24, 24, 24),rgb(24, 24, 24),rgb(54, 54, 54),rgb(51, 51, 51),rgb(107, 107, 107));
+    align-items: center;
+    padding: 0px 40px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 22px 10px black;
+    margin: 100px auto;
+    gap: 50px; 
+}
+.pic2 {
+    flex: 1; 
+    max-width: 100%;
+    
+}
+.pic2 img {
+    width: 250px; /* Make image responsive */
+}
+.text {
+    flex: 2; /* Allow the text to take up more space */
+}
+.text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text h3 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: normal; /* Make the subheading less bold */
+}
+.message {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.6; /* Improve text readability */
+}
+#btn2 {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px 20px;
+    color: purple;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+#btn2:hover {
+    background-color: #F285DE;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+#btn2:active{
+    background-color: #6d055a;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.footer_content {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.footer p {
+    font-size: 14px;
+}
+.mail {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.mail img {
+    width: 20px;
+    margin-right: 10px;
+}
+.linksinfooter {
+    display: flex;
+    gap: 20px;
+}
+.linksinfooter div {
+    display: flex;
+    align-items: center;
+}
+.linksinfooter img {
+    width:20px;
+    margin-right: 10px;
+}
+.linksinfooter a {
+    text-decoration: none;
+    color: #fff;
+}
+.linksinfooter a:hover {
+    color: #a100ff;
+}
+hr { 
+    border: 1px solid #baaec4;
+    margin: 0px auto;
+    width: 1250px;  
+    text-align: center;
+}
+
+@media ((min-width: 100px)  and (max-width:500px)){
+    *{margin: 0;}
+    hr{ border: 1px solid #baaec4; margin: 0px 50px; width: 400px; text-align: center;}
+    .nav_container{display: none;}
+    .container2 {width: 100px; height: 400px;margin: 100px 50px 25px 10px;display: inline-block; align-items: center;}
+    .pic2 img{ width: 150px; margin: 40px auto 25px 80px;}
+    #btn2:hover{font-size: 12px;}
+    #btn2{margin-left: 180px; width: 120px; font-size: 12px; padding: 5px 0px; margin-top: 2px;}
+    .bar {display: block;width: 40px;height: 3px;margin: 10px auto;cursor: pointer; background-color: #ffffff;}
+    .message p{font-size: 12px;}
+    .text h2{text-align: center;}
+    .text h3{font-size: 12px;}
+    .linksinfooter{display: block;}
+    .linksinfooter img {width: 10px; margin-right: 5px;}
+    .footer{padding: 1px 44px;}
+    .footer p {font-size: 12px;}
+    .mail img {width: 10px; margin-right: 10px;}
+    .hamburger{display: block;margin-right: 20px;}
+} 
+@media  (min-width: 500px)  and (max-width:768px){
+    *{margin: 0;}
+    hr { border: 1px solid #baaec4;margin: 0px auto;width: 640px; text-align: center;}
+    .container2 {width: 550px;height: 800px;margin: 100px 100px;display: inline-block; align-items: center;}
+    .container2 img{width: 180px; margin: 40px 40px 25px 120px;}
+    .nav_container{display: none;}
+    .logo img{width: 40px;}
+    .text h2{ text-align: center;}
+    #btn2{margin-left: 150px;}
+    .linksinfooter{display: block;}
+    .linksinfooter img { width: 10px;margin-right: 5px;}
+    .footer p {font-size: 14px;}
+    .mail img {width: 13px;margin-right: 10px;}
+    .hamburger{display: block;margin-right: 20px;}
+    .bar {display: block;width: 40px;height: 3px;margin: 10px auto;cursor: pointer;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;background-color: #ffffff; } 
+}
+@media  (min-width: 768px)  and (max-width:990px){
+    *{ margin: 0;}
+    .logo img{width: 34px;}
+    /* .nav_container ul li{width: 110px;} */
+    /* .nav_container ul li a{font-size: 16px; text-align: center;} */
+    .container2 {width: 800px;height: 460px;margin: 100px 40px 100px 60px;display: flex;align-items: center; gap: 30px;} 
+    .container2 img{width: 200px;}
+    #btn2{margin-left: 300px; width: 150px;}
+    .linksinfooter img { width: 16px;margin-right: 5px;}
+    .footer p {font-size: 14px;}
+    .mail img {width: 10px;margin-right: 10px;}
+}
+@media  (min-width: 760px) and (max-width:800px){
+    *{ margin: 0;}
+    .text h2{ text-align: center;}
+    .text h3{font-size: 12px;}
+    .message p{font-size: 13px;}
+    #btn2{margin-left: 240px; width: 120px; font-size: 12px;}
+    #btn2:hover{font-size: 12px;}
+    .container2 {width: 700px;height: 600px;margin: 100px 200px 100px 30px;display: flex;align-items: center; gap: 30px;} 
+    .text{margin-top: 20px;}
+
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 80%
+    }
+    hr{
+        width: 1100px;
+    }
+}
+@media (max-width: 991px){
+    .header{
+        padding: 1rem;
+    }
+
+}
+
+
+
+
+    </style>
 </head>
 <body>
-    <main>
+    <main class="home-page">
         <header>
             <div class="header">
                 <div class="logo">
                     <img src="images/logo.png" alt="logo">
                 </div>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
                 <div class="nav_container">
                     <nav>
                         <ul>
-                            <li><a href="home_page.html">Home</a></li>
-                            <li><a href="about_me.html">About</a></li>
-                            <li><a href="service.html">Service</a></li>
-                            <li><a href="skills.html">Skill</a></li>
-                            <li><a href="contacts.html">Contact</a></li>
+                            <li id="home"><a href="home_page.html">Home</a></li>
+                            <li id="about"><a href="about_me.html">About</a></li>
+                            <li id="service"><a href="service.html">Service</a></li>
+                            <li id="skill"><a href="skills.html">Skill</a></li>
+                            <li id="contact"><a href="contacts.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,7 +276,7 @@
                     <img src="images/photo1.png" alt="myimage">
                 </div>
                 <div class="text">
-                    <h2> About</h2>
+                    <h2> About me</h2>
                     <h3>Hello again i am bethelihem wondimneh,
                         a software engineer</h3>
                     <div class="message">
@@ -58,12 +302,12 @@
             <div class="footer_content">
                 <div>
                     <p>This content is © Copyright [2024] [bethelihem wondimneh].</p>
-                    <div>
+                    <div class="mail">
                         <img src="icons/Mail.png" alt="">
                         <p>wondimnehbethelihem@gmail.com</p>
                     </div>
                 </div>
-                <div>
+                <div class="linksinfooter">
                     <div>
                         <a href="https://www.linkedin.com/feed/"><img src="icons/linkedin.png" alt="linkdin"></a>
                         <a href="https://www.linkedin.com/feed/"><p>linkedin</p></a>
