@@ -21,8 +21,106 @@
     background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(255, 147, 228, 1));
     border-radius: 5px;
 }
-
-.nav_container ul li:active  {
+/* #home{
+    background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(118, 11, 91));
+    border-radius: 5px;
+} */
+.nav_container li:active  {
     background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(118, 11, 91));
     border-radius: 5px;
 }
+.bar {display: block;width: 6vw;height: 0.5vh;margin: 2vh auto;cursor: pointer; background-color: #ffffff;}
+/* .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+} */
+/* .navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+} */
+
+/* .humburgr{display: none; cursor: pointer;}
+.bar{
+    display: none;
+    width: 26px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (min-width:100px) and (max-width: 700px){
+    .humburgr{display: block;}
+    .humburgr.active .bar:nth-child(2){opacity: 0;}
+    .humburgr.active .bar:nth-child(1){transform: translateY(8px) rotate(45deg);}
+    .humburgr.active .bar:nth-child(3){transform: translateY(-8px) rotate(-45deg);}
+    .navmenu{position: fixed;left: -100%; top: 70px; gap: 0
+        ;flex-direction: column; background-color: #6d055a; width: 100%; text-align: center;
+        transition: 0.3sec;
+    }
+    .nav-item{margin: 16px 0;}
+    .navmenu.active{
+        left: 0;
+    }
+}
+ */
+
+
+
+
+
+
+/* .nav_container {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.nav_container.show {
+    display: flex;
+}
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+@media (min-width: 700px) {
+    .nav_container {
+        display: block;
+    }
+    .nav_container {
+        display: block;
+        position: static;
+        width: auto;
+    }
+
+    .nav_container ul {
+        flex-direction: row;
+    }
+
+    .nav_container ul li {
+        padding: 1vh 1vw;
+    }
+} */
+
+

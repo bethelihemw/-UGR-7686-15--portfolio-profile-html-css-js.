@@ -1,0 +1,84 @@
+.container5 {
+    border-radius: 13px;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    gap: 7vw;
+    justify-content: center;
+    background: conic-gradient(from 90deg, rgb(107, 107, 107), rgb(51, 51, 51), rgb(0, 0, 0), rgb(51, 51, 51), rgb(107, 107, 107));
+    align-items: center;
+    padding: 1vh 1vw;
+    border: 1px solid black;
+    box-shadow: 10px 10px 22px 10px black;
+    margin: 8vh auto;
+    color: white;
+   
+}
+#name ,#email ,#message{
+    width: 24vw;
+}
+.subdiv1{
+    line-height: 1.5;
+    margin: 0vw;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+}
+.subdiv1 h2{
+    margin: 1vw auto;
+}
+.subdiv1 h3{
+    margin: 1vw auto;
+}
+
+.subdiv2 input{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+.subdiv2 h3{
+    font-size: 2vw;
+    margin: 1vw;
+}
+.subdiv2 p{
+    font-size: 1.2vw;
+    margin: 2vh 20px; 
+}
+.subdiv1 img{
+    width: 2vw;
+}
+#final{
+    margin: 1vw;
+    font-size: 1.2vw;
+}
+.flex{
+    display: flex;
+}
+#message{
+    height: 12vh;
+    margin-top: 20px;
+}
+#btn3{
+    background-color: transparent;
+    border: 1px solid purple;
+    padding: 1vh 6vh;
+    color: purple;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.5vw;
+    transition: background-color 0.5s;
+    margin-left: 25vw;
+}
+#btn3:hover {
+    background-color: #F285DE;
+    color: #fff;
+    font-size: 1.5vw;
+    transition: background-color 0.3s;
+}
+#btn3:active{
+    background-color: #6d055a;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}

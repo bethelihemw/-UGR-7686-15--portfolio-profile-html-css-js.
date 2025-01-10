@@ -4,301 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>skills</title>
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/nav_css.css">
+    <link rel="stylesheet" href="css/body_css.css">
+    <link rel="stylesheet" href="css/footer.css">
     <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
-}
-
-body {
-    background: linear-gradient(rgb(0, 0, 0),#646464,rgb(0, 0, 0));
-  margin: 0; 
-  height: 100vh;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px 0px 30px;
-}
-.logo img {
-    margin: 1px auto;
-    width: 50px;
-    border-radius: 12px;
-    margin-left: 30px;
-}
-.nav_container ul {
-    list-style-type: none;
-    display: flex;
-}
-#skill{
-    background: linear-gradient(rgba(128, 0, 128, 1),black);
-}
-.nav_container ul li {
-    /* margin-right: 20px; */
-    width: 160px;
-    padding: 5px 20px;
-    border-radius: 5px;
-}
-.nav_container ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-}
-.nav_container ul li:hover {
-    background: linear-gradient(to bottom, rgb(28, 28, 28,0), rgb(255, 147, 228,1));
-    border-radius: 5px;
-}
-
-
-/* .container4 {
-    color: white;
-    border-radius: 13px;
-    width: 950px;
-    height:500px;
-    display: flex;
-    justify-content: space-between;
-    background: conic-gradient(from 90deg, rgb(107,107,107),rgb(51, 51, 51),rgb(0, 0, 0),rgb(51, 51, 51),rgb(107, 107, 107));
-    align-items: center;
-    padding: 0px 40px;
-    border: 1px solid black;
-    box-shadow: 10px 10px 22px 10px black;
-    margin: 100px auto;
-    gap: 50px; 
-}
-.skill-page{  
-    
-} */
-
-
-.skill_page {
-    color: white;
-    border-radius: 13px;
-    width: 950px;
-    height:500px;
-    display: flex;
-    justify-content: space-between;
-    background: conic-gradient(from 90deg, rgb(107,107,107),rgb(51, 51, 51),rgb(0, 0, 0),rgb(51, 51, 51),rgb(107, 107, 107));
-    align-items: center;
-    padding: 0px 40px;
-    border: 1px solid black;
-    box-shadow: 10px 10px 22px 10px black;
-    margin: 100px auto;
-    gap: 50px; 
-    background-color: #333; /* Dark background */
-    color: #eee; /* Light text */
-    padding: 20px;
-}
-
-.container4 {
-    flex: 1; 
-    padding: 20px;
-}
-
-.container4 h2, .container4 h3 {
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.progress-container {
-    margin-top: 20px;
-}
-
-.progress-container p {
-    margin-bottom: 5px;
-}
-
-.progress-bar {
-    background-color: #eee; /* Light background for the bar */
-    height: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px; /* Rounded corners */
-    overflow: hidden; /* Hide overflowing content */
-    width: 100%; /* Full width container */
-    position: relative;
-}
-
-.progress-bar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-image: linear-gradient(to right, rgb(226, 163, 163),rgb(201, 43, 122));
-    border-radius: 5px;
-    transition: width 0.5s ease; /* Smooth width transition */
-}
-
-/* Set the width of the progress bar based on the percentage */
-.progress-container p:nth-child(1) + .progress-bar::before { width: 90%; }
-.progress-container p:nth-child(3) + .progress-bar::before { width: 50%; }
-.progress-container p:nth-child(5) + .progress-bar::before { width: 70%; }
-.progress-container p:nth-child(7) + .progress-bar::before { width: 40%; }
-
-/* Hobbies section */
-.skill_page > div:last-child { /* Select the last div in skill_page */
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-}
-
-.skill_page > div:last-child h3 {
-    margin-bottom: 10px;
-}
-
-.skill_page > div:last-child img {
-    width: 150px; /* Adjust image size as needed */
-    height: 150px;
-    margin: 5px;
-    border: 1px solid #ddd; /* Light border around images */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    object-fit: cover; /* Prevent image distortion */
-}
-
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-    .skill_page {
-        flex-direction: column;
-        align-items: center;
-    }
-    .skill_page > div:last-child img {
-        width: 100px;
-        height: 100px;
-    }
-} */
-
-
-.footer_content {
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-.footer p {
-
-    font-size: 14px;
-}
-.mail {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-.mail img {
-    width: 20px;
-    margin-right: 10px;
-}
-.linksinfooter {
-    display: flex;
-    gap: 20px;
-}
-.linksinfooter div {
-    display: flex;
-    align-items: center;
-}
-.linksinfooter img {
-    width: 20px;
-    margin-right: 10px;
-}
-.linksinfooter a {
-    text-decoration: none;
-    color: #fff;
-}
-.linksinfooter a:hover {
-    color: #a100ff;
-}
-hr { 
-    border: 1px solid #baaec4;
-    margin: 0px auto;
-    width: 1250px;  
-    text-align: center;
-}
-
-
-@media  (min-width: 412px)  and (max-width:768px){
-    *{
-        margin: 0;
-    }
-    hr { 
-    border: 1px solid #baaec4;
-    margin: 0px auto;
-    width: 380px;  
-    text-align: center;
-    }
-    .container1 {
-        width: 400px;
-        height: 600px;
-        margin: 100px 50px;
-        display: inline-block;
-        align-items: center;
-    }
-    .content1 p, .content1 h1{
-        text-align: center;
-    }
-    .container1 img{
-        width: 180px;
-        position: absolute;
-        top: 200px;
-    }
-    .nav_container{
-        display: none;
-    }
-    .logo img{
-        width: 40px;
-    }
-    .content1{
-        position: absolute;
-        top: 450px;
-        align-items: center;
-        margin-left: 22px;
-    }
-    .content1 h1{
-        font-size: 25px;
-    }
-    #btn1{
-        margin-left: 100px;
-    }
-    
-    .linksinfooter{
-        display: block;
-    }
-    .linksinfooter img {
-    width: 10px;
-    margin-right: 5px;
-    }
-    .footer p {
-    font-size: 10px;
-    }
-    .mail img {
-    width: 10px;
-    margin-right: 10px;
-    }
-    .hamburger{
-        display: block;
-        margin-right: 20px;
-    }
-    .bar {
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin: 10px auto;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #ffffff; 
-}
-
-}
-
-
-
-
-
-    </style>
+        #skill{
+            background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(118, 11, 91));
+            border-radius: 5px;
+        }
+        </style>
 </head>
 <body>
     <header>
@@ -306,10 +21,15 @@ hr {
             <div class="logo">
                 <img src="images/logo.png" alt="logo">
             </div>
+            <!-- <div class="hamburger" >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div> -->
             <div class="nav_container">
                 <nav>
                     <ul>
-                        <li id="home"><a href="home_page.html">Home</a></li>
+                        <li id="home"><a href="index.html">Home</a></li>
                         <li id="about"><a href="about_me.html">About</a></li>
                         <li id="service"><a href="service.html">Service</a></li>
                         <li id="skill"><a href="skills.html">Skill</a></li>
@@ -322,25 +42,25 @@ hr {
     <hr>
     <section class="skill_page">
 
-        <div class="container4">
-            <div>
+        <div class="container2">
+            <div class="title">
                 <h2>Skills</h2>
                 <h3>academic skills</h3>
             </div>
             <div class="progress-container">
                 <p>Html/Css</p>
                 <div class="progress-bar">90%</div>
-                <p>Javascript</p>
+                <p>Javascript/java</p>
                 <div class="progress-bar">50%</div>
                 <p>Python</p>
                 <div class="progress-bar">70%</div>
-                <p>Java</p>
+                <p>git</p>
                 <div class="progress-bar">40%</div>
             </div>
         </div>
-        <div>
-            <h3>Hobbies and interest</h3>
-            <div>
+        <div class="hobbies">
+            <h3 class="title">Hobbies and interest</h3>
+            <div class="interest-img">
                 <img src="images/drawing.png" alt="my drawing">
                 <img src="images/poem.png" alt="my poems">
                 <img src="images/fashion.png" alt="adventure">
@@ -349,7 +69,7 @@ hr {
     </section>
     <hr>
     <footer>
-        <div class="footer_content">
+        <div class="footer">
             <div>
                 <p>This content is © Copyright [2024] [bethelihem wondimneh].</p>
                 <div class="mail">
@@ -358,15 +78,15 @@ hr {
                 </div>
             </div>
             <div class="linksinfooter">
-                <div>
+                <div class="linkedin">
                     <a href="https://www.linkedin.com/feed/"><img src="icons/linkedin.png" alt="linkdin"></a>
                     <a href="https://www.linkedin.com/feed/"><p>linkedin</p></a>
                 </div>
-                <div>
-                    <a href="https://github.com/bethelihemw"><img src="icons/github-sign.png" alt="github"></a>
+                <div class="github">
+                    <a href="https://github.com/bethelihemw"><img src="icons/github.png" alt="github"></a>
                     <a href="https://github.com/bethelihemw"><p>github</p></a>
                 </div>
-                <div>
+                <div class="telegram">
                     <a href="@AstrixW">
                         <img src="icons/telegram.png" alt="telegram">
                     </a>

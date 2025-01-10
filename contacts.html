@@ -4,264 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav_css.css">
+    <link rel="stylesheet" href="css/body_css.css">
     <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
-}
-.contact-page{  
-    background: linear-gradient(rgb(0, 0, 0),#646464,rgb(0, 0, 0));
-}
-body {
-  margin: 0; 
-  height: 100vh;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px 0px 30px;
-}
-.logo img {
-    margin: 1px auto;
-    width: 50px;
-    border-radius: 12px;
-    margin-left: 30px;
-}
-.nav_container ul {
-    list-style-type: none;
-    display: flex;
-}
-#contact{
-    background: linear-gradient(rgba(128, 0, 128, 1),black);
-}
-.nav_container ul li {
-    /* margin-right: 20px; */
-    width: 160px;
-    padding: 5px 20px;
-    border-radius: 5px;
-}
-.nav_container ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-}
-.nav_container ul li:hover {
-    background: linear-gradient(to bottom, rgb(28, 28, 28,0), rgb(255, 147, 228,1));
-    border-radius: 5px;
-}
-
-.container5 {
-    color: white;
-    border-radius: 13px;
-    width: 950px;
-    height:500px;
-    display: flex;
-    justify-content: space-between;
-    background: conic-gradient(from 90deg, rgb(107,107,107),rgb(51, 51, 51),rgb(0, 0, 0),rgb(51, 51, 51),rgb(107, 107, 107));
-    align-items: center;
-    padding: 0px 40px;
-    border: 1px solid black;
-    box-shadow: 10px 10px 22px 10px black;
-    margin: 100px auto;
-    gap: 50px; 
-}
-.subdiv1{
-    line-height: 1.5;
-    margin: 0px;
-    font-size: 18px;
-    margin-left: 20px;
-}
-.subdiv1 h2{
-    margin: 10px auto;
-}
-.subdiv1 h3{
-    margin: 10px auto;
-}
-
-.subdiv2 input{
-    width: 300px;
-    height: 30px;
-    border-radius: 2px;
-    border: 1px solid black;
-}
-.subdiv2 h3{
-    font-size: 24px;
-    margin: 12px;
-}
-.subdiv2 p{
-    font-size: 18px;
-    margin: 10px 20px; 
-}
-.subdiv1 img{
-    width: 30px;
-}
-#final{
-    margin: 10px
-}
-.flex{
-    display: flex;
-}
-#message{
-    height: 80px;
+        #contact{
+            background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(118, 11, 91));
+            border-radius: 5px;
+        }
+        #message-container {
     margin-top: 20px;
-}
-#btn3{
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 5px 20px;
-    color: purple;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 18px;
-    transition: background-color 0.5s;
-    margin-left: 350px;
-}
-#btn3:hover {
-    background-color: #F285DE;
-    color: #fff;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-#btn3:active{
-    background-color: #6d055a;
-    color: #fff;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-
-.footer_content {
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-.footer p {
-    font-size: 14px;
-}
-.mail {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-.mail img {
-    width: 20px;
-    margin-right: 10px;
-}
-.linksinfooter {
-    display: flex;
-    gap: 20px;
-}
-.linksinfooter div {
-    display: flex;
-    align-items: center;
-}
-.linksinfooter img {
-    width:20px;
-    margin-right: 10px;
-}
-.linksinfooter a {
-    text-decoration: none;
-    color: #fff;
-}
-.linksinfooter a:hover {
-    color: #a100ff;
-}
-hr { 
-    border: 1px solid #baaec4;
-    margin: 0px auto;
-    width: 1250px;  
     text-align: center;
 }
-
-
-
-
-
-
-@media  (min-width: 412px)  and (max-width:768px){
-    *{
-        margin: 0;
-    }
-    hr { 
-    border: 1px solid #baaec4;
-    margin: 0px auto;
-    width: 380px;  
-    text-align: center;
-    }
-    .container1 {
-        width: 400px;
-        height: 600px;
-        margin: 100px 50px;
-        display: inline-block;
-        align-items: center;
-    }
-    .content1 p, .content1 h1{
-        text-align: center;
-    }
-    .container1 img{
-        width: 180px;
-        position: absolute;
-        top: 200px;
-    }
-    .nav_container{
-        display: none;
-    }
-    .logo img{
-        width: 40px;
-    }
-    .content1{
-        position: absolute;
-        top: 450px;
-        align-items: center;
-        margin-left: 22px;
-    }
-    .content1 h1{
-        font-size: 25px;
-    }
-    #btn1{
-        margin-left: 100px;
-    }
-    
-    .linksinfooter{
-        display: block;
-    }
-    .linksinfooter img {
-    width: 10px;
-    margin-right: 5px;
-    }
-    .footer p {
-    font-size: 10px;
-    }
-    .mail img {
-    width: 10px;
-    margin-right: 10px;
-    }
-    .hamburger{
-        display: block;
-        margin-right: 20px;
-    }
-    .bar {
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin: 10px auto;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #ffffff; 
+#errorMessage {
+    color: red;
+    display: none;
+    position: absolute;
+    top: 85vh;
+    font-size: 1.7vw;
+    right: 22vw;
 }
 
+#successMessage {
+    position: absolute;
+    top: 85vh;
+    font-size: 1.7vw;
+    right: 22vw;
+    color: green;
+    display: none;
 }
-
-    </style>
+        </style>
 </head>
 <body>
     <main class="contact-page">
@@ -270,10 +43,15 @@ hr {
                 <div class="logo">
                     <img src="images/logo.png" alt="logo">
                 </div>
+                <!-- <div class="hamburger" >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div> -->
                 <div class="nav_container">
                     <nav>
                         <ul>
-                            <li id="home"><a href="home_page.html">Home</a></li>
+                            <li id="home"><a href="index.html">Home</a></li>
                             <li id="about"><a href="about_me.html">About</a></li>
                             <li id="service"><a href="service.html">Service</a></li>
                             <li id="skill"><a href="skills.html">Skill</a></li>
@@ -286,17 +64,17 @@ hr {
         <hr>
         <section class="contact_page">
             <div class="container5">
-                <div class="subdiv1"> 
+                <div class="subdiv1">
+                     
                     <h2>Contacts</h2>
                     <h3>contact info</h3>
                     <p>Name: [Bethelihem Wondimneh]</p>
                     <p id="mail"> Email: [wodimnehbethelihem@gmail.com]</p>
-                    <p> Phone: [+251938646240]</p>
                     <p id="telegram">Telegram Username: @AstrixW</p>
                     <p> Location: [Addis Ababa, Ethiopia]</p>
                     <p id="final">I look forward to hearing from you!</p>
                     <div>
-                        <a href="https://github.com/bethelihemw"><img src="icons/github-sign.png" alt="github"></a>
+                        <a href="https://github.com/bethelihemw"><img src="icons/github.png" alt="github"></a>
                         <a href="https://www.linkedin.com/feed/"><img src="icons/linkedin.png" alt="linkedin"></a>
                         <a href="#telegram"></a><img src="icons/telegram.png" alt="telegram">
                         <a href="#mail"><img src="icons/Mail.png" alt="email"></a>
@@ -305,24 +83,29 @@ hr {
                 <div class="subdiv2">
                     <h3>contact me</h3>
                     <div class="flex">
-                        <p>Name:</p>
-                        <input type="text" placeholder="">
+                        <p>Name        : </p>
+                        <input type="text" id="name" placeholder=" enter name">
                     </div>
                     <div class="flex">
-                        <p>Email:</p>
-                        <input type="text" placeholder="@">
+                        <p>Email     :</p>
+                        <input type="text" id="email" placeholder="@">
                     </div>
                     <div class="flex">
                         <p>Message:</p>
-                        <input id="message" type="text" placeholder="">
+                        <textarea id="message" placeholder=""></textarea>
                     </div>
                     <button id="btn3">Send</button>
                 </div>
+
+        <div id="message-container">
+        <div id="errorMessage"></div>
+        <div id="successMessage"></div>
+        </div>
             </div>
         </section>
         <hr> 
         <footer>
-            <div class="footer_content">
+            <div class="footer">
                 <div>
                     <p>This content is © Copyright [2024] [bethelihem wondimneh].</p>
                     <div class="mail">
@@ -331,15 +114,15 @@ hr {
                     </div>
                 </div>
                 <div class="linksinfooter">
-                    <div>
+                    <div class="linkedin">
                         <a href="https://www.linkedin.com/feed/"><img src="icons/linkedin.png" alt="linkdin"></a>
                         <a href="https://www.linkedin.com/feed/"><p>linkedin</p></a>
                     </div>
-                    <div>
-                        <a href="https://github.com/bethelihemw"><img src="icons/github-sign.png" alt="github"></a>
+                    <div class="github">
+                        <a href="https://github.com/bethelihemw"><img src="icons/github.png" alt="github"></a>
                         <a href="https://github.com/bethelihemw"><p>github</p></a>
                     </div>
-                    <div>
+                    <div class="telegram">
                         <a href="@AstrixW">
                             <img src="icons/telegram.png" alt="telegram">
                         </a>
@@ -349,5 +132,43 @@ hr {
             </div>     
         </footer>
     </main>
+    <script>
+        const form = document.querySelector('.subdiv2'); // Select the form container
+        const errorMessage = document.getElementById('errorMessage');
+        const successMessage = document.getElementById('successMessage');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        const sendButton = document.getElementById('btn3');
+      
+        sendButton.addEventListener('click', function(event) {
+          event.preventDefault();
+      
+          const name = nameInput.value.trim();
+          const email = emailInput.value.trim();
+          const message = messageInput.value.trim();
+      
+          errorMessage.textContent = "";
+          successMessage.textContent = "";
+          errorMessage.style.display = 'none';
+          successMessage.style.display = 'none';
+      
+          if (name === "" || email === "" || message === "") {
+            errorMessage.textContent = "Please fill in all fields.";
+            errorMessage.style.display = 'block';
+            return;
+          }
+      
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+              errorMessage.textContent = "Please enter a valid email address.";
+              errorMessage.style.display = 'block';
+              return;
+          }
+      
+          successMessage.textContent = "Message sent successfully!";
+          successMessage.style.display = 'block';
+          form.reset();
+        });
+      </script>
 </body>
 </html>

@@ -8,6 +8,12 @@
     <link rel="stylesheet" href = "css/footer.css">
     <link rel="stylesheet" href = "css/about.css">
     <title>about me</title>
+    <style>
+        #about{
+            background: linear-gradient(to bottom, rgb(28, 28, 28, 0), rgb(118, 11, 91));
+            border-radius: 5px;
+        }
+        </style>
 </head>
 <body>
     <main class="home-page">
@@ -16,15 +22,15 @@
                 <div class="logo">
                     <img src="images/logo.png" alt="logo">
                 </div>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                  </div>
+                <!-- <div class="hamburger" >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div> -->
                 <div class="nav_container">
                     <nav>
                         <ul>
-                            <li id="home"><a href="home_page.html">Home</a></li>
+                            <li id="home"><a href="index.html">Home</a></li>
                             <li id="about"><a href="about_me.html">About</a></li>
                             <li id="service"><a href="service.html">Service</a></li>
                             <li id="skill"><a href="skills.html">Skill</a></li>
@@ -52,13 +58,13 @@
                               comes from a deep appreciation for creativity and design. Seeing a simple
                                line of code transform into something beautiful and functional—it's pure magic to me.
                         </p>
-                        <p>
+                        <!-- <p>
                             When I'm not busy crafting stunning websites, you'll probably find me exploring 
                             ways to grow and improve myself. I also love browsing beautiful clothes online, 
                             imagining how I could design my own unique pieces one day.
-                        </p>
+                        </p> -->
                     </div>
-                    <button id="btn2">let's talk</button>
+                    <button onclick="gotocontact()" id="btn2">let's talk</button>
                 </div>
             </div>
         </section>
@@ -90,6 +96,12 @@
                 </div>
             </div>     
         </footer>
-    </main> 
+    </main>
+    <script>
+        const myButton = document.getElementById("btn2");
+        myButton.addEventListener("click", function() {
+          window.location.href = "http://127.0.0.1:5500/contacts.html";
+        });
+      </script> 
 </body>
 </html>

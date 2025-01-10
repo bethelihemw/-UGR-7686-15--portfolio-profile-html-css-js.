@@ -70,3 +70,25 @@ hr {
     text-align: center;
     margin-top: 25vh;
 }
+@media(max-width:300px){
+    .linksinfooter{display: block;}
+    .footer p {
+        font-size: 1vh;
+    }
+}
+@media  (min-width: 400px) and (max-width:700px){
+    .linksinfooter{display: block;}
+    .footer p {
+        font-size: 1.7vh;
+    }
+}
+@media  (min-width: 700px) and (max-width:860px){
+    .linksinfooter{display: grid;
+    grid-template-columns: 1fr 1fr;grid-template-rows: auto auto; /* Two rows */
+    gap: 10px; /* Spacing between the items */
+    max-width: 400px; /* Adjust width as needed */}
+    .footer p {
+        font-size: 1.7vh;
+        
+    }
+}
