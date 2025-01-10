@@ -94,22 +94,42 @@
     #two{width:14vw; height: 30vh;}
     #three{width:14vw; height: 25vh;}
     .container3{width: 90vw;}
+    .container3 h2{font-size: 5vw;}
     #ads{
         margin: 3vh;
         font-size: 2vw;
     }
 }
-@media  (min-width: 100px) and (max-width:500px){
+@media  (min-width: 200px) and (max-width:400px){
     #one , #two , #three{
-        margin: 0.3vw;
+        margin: 0.2vw;
     }
-    #one{width:15vw; height: 27vh; }
-    #two{width:14vw; height: 22vh;}
-    #three{width:14vw; height: 17vh;}
+    .container3 p{
+        font-size: 2vw;
+    }
+    .block{width: 15vw; margin-left: 1vw;}
+    #one{width:15vw; height: 27vh;}
+    #two{width:14vw; height: 23vh;}
+    #three{width:13vw; height: 19vh;}
+    .container3 h2{font-size: 3vw;}
 }
 @media  (min-width: 700px) and (max-width:1000px){
     #one{width:15vw; height: 40vh; }
     #two{width:14vw; height: 35vh;}
     #three{width:14vw; height: 30vh;}
     .container3{width: 90vw;}
+}
+@media(max-width:200px){
+    .block{width: 15vw;}
+    #one , #two , #three{
+        margin: 0.1vw;
+    }
+    .block{width: 13vw; margin-left: 0.4vw;}
+    #one{width:13vw; height: 15vh; }
+    #two{width:11vw; height: 13vh;}
+    #three{width:9vw; height:11vh;}
+    .container3 h2{font-size: 3vw;}
+    .container3 p{
+        font-size: 1.5vw;
+    }
 }
