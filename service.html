@@ -23,22 +23,22 @@
             <div class="logo">
                 <img src="images/logo.png" alt="logo">
             </div>
-            <div class="nav_container">
-                <nav>
-                    <ul>
-                        <li id="home"><a href="index.html">Home</a></li>
-                            <li id="about"><a href="about_me.html">About</a></li>
-                            <li id="service"><a href="service.html">Service</a></li>
-                            <li id="skill"><a href="skills.html">Skill</a></li>
-                            <li id="contact"><a href="contacts.html">Contact</a></li>
+            <div class="nav_container" id="nav_container">
+                <nav class="navbar">
+                    <ul class="navmenu" id="navmenu">
+                        <li class="nav-item" id="home"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item" id="about"><a class="nav-link" href="about_me.html">About</a></li>
+                        <li class="nav-item" id="service"><a class="nav-link" href="service.html">Service</a></li>
+                        <li class="nav-item" id="skill"><a class="nav-link" href="skills.html">Skill</a></li>
+                        <li class="nav-item" id="contact"><a class="nav-link"href="contacts.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <!-- <div class="hamburger" >
+            <div class="hamburger" id="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div> -->
+            </div>
         </div>
     </header>
     <hr>
@@ -102,6 +102,15 @@
             </div>
         </div>     
     </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navmenu');
+        
+        // Add click event to the hamburger to toggle the 'active' class on the nav menu
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });</script>
+        <script src="script.js"></script>
    
 </main>
 </body>

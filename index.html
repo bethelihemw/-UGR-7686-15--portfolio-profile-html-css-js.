@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
+    <title>index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "css/nav_css.css">
     <link rel="stylesheet" href = "css/body_css.css">
@@ -26,8 +26,8 @@
                 
                 <div class="nav_container" id="nav_container">
                     <nav class="navbar">
-                        <ul class="navmenu">
-                            <li class="nav-item" id="home"><a class="nav-link" href="home_page.html">Home</a></li>
+                        <ul class="navmenu" id="navmenu">
+                            <li class="nav-item" id="home"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item" id="about"><a class="nav-link" href="about_me.html">About</a></li>
                             <li class="nav-item" id="service"><a class="nav-link" href="service.html">Service</a></li>
                             <li class="nav-item" id="skill"><a class="nav-link" href="skills.html">Skill</a></li>
@@ -35,16 +35,16 @@
                         </ul>
                     </nav>
                 </div>
-                <!-- <div class="hamburger" >
+                <div class="hamburger" id="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div> -->
+                </div>
             </div>
         </header>
         <hr>
         <audio id="background-music" autoplay loop>
-            <!-- <source src="audios/audio.mp3" type="audio/mpeg"> -->
+            <source src="audios/audio.mp3" type="audio/mpeg">
         </audio>
         <!-- home page -->
         <section class="home_page">
@@ -54,11 +54,11 @@
                     <h1>Bethelihem <span>Wondimneh</span> </h1>
                     <p>i am software engineer</p>
                     <div class="content2">
-                        <button id="btn1">See cv</button>
+                        <button id="btn1">more</button>
                     </div>
                 </div>
                 <div class="pic1">
-                    <img width="150px" src="images/photo 2.png" alt="myimage">
+                    <img width="250px" src="images/photo 2.png" alt="myimage">
                 </div>
             </div>   
         </section>
@@ -91,15 +91,20 @@
             </div>     
         </footer>
     </main>
-    <!-- <script>
-        const hamburger = document.getElementById('hamburger');
-        const navContainer = document.getElementById('nav_container');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navContainer.classList.toggle('active');
+    <script>
+        const myBtn = document.getElementById("btn1");
+        myBtn.addEventListener("click", function() {
+          window.location.href = "http://127.0.0.1:5500/about_me.html";
         });
-    </script> -->
-    <!-- <script src="script.js"></script> -->
+
+
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navmenu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

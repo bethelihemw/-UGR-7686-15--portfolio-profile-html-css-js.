@@ -60,20 +60,21 @@
 }
 #btn3{
     background-color: transparent;
-    border: 1px solid purple;
-    padding: 1vh 6vh;
+    border: 1px solid white;
+    padding: 1vh 5vh;
     color: purple;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    font-size: 1.5vw;
+    font-size: 3vw;
     transition: background-color 0.5s;
     margin-left: 25vw;
+    font-weight: bold;
 }
 #btn3:hover {
     background-color: #F285DE;
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 3vw;
     transition: background-color 0.3s;
 }
 #btn3:active{

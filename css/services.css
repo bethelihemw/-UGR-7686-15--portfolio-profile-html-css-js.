@@ -82,7 +82,6 @@
     margin: 4vh;
 }
 @media  (min-width: 400px) and (max-width:700px){
-    .nav_container{display: none;}
     .logo img { width: 8vh;}
     .block p{
         font-size: 1.8vw;
